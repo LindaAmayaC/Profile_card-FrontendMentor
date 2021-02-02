@@ -1,9 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    top:0;
 }
 body{
     background-color: hsl(185, 75%, 39%);
+ 
 }
 .contenedor-principal{
     width: 530px;
@@ -12,7 +14,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
+    z-index: 2;
     position: relative;
     
 }
@@ -30,12 +32,13 @@ body{
 }
 .cuadro-medio{
     width: 350px;
-    height: 231px;
+    height: 224px;
     top:291px;
     position: absolute;
     display: flex;
     background-color:white;
     border-radius: 0 0 15px 15px  /0 0 15px 15px ;
+    z-index: 3;
    
 }
 .cuadro-inferior{
@@ -46,7 +49,7 @@ body{
     display: grid;
     z-index: 3;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: yellow;
+    background-color: white;
     border-top: 1px solid  hsl(0, 0%, 59%);
 } 
 .img-perfil img{
@@ -63,10 +66,54 @@ body{
     position: absolute;;
     z-index: 4;
     top:355px;
-    left:226px;
+    left:205px;
     display:flex;
     font-size: 18px;
 }
 .info-usuario span{
     padding-left: 5px;
+}
+.info-usuario .ciudad{
+    position: absolute;;
+    z-index: 4;
+    top:363px;
+    left:232px;
+    display:flex;
+    font-size: 18px;
+}
+.cuadro-inferior{
+    width: 350px;
+    position:absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    
+}
+.cuadro-inferior ul{
+    list-style: none;
+    margin: 10px;
+    display: flex;
+}
+.cuadro-inferior ul li{
+    margin:0 35px;
+    justify-content: center;
+}
+.cuadro-inferior ul li span{
+    justify-content: center;
+    font-size: 14px;
+}
+.circulo-superior svg{
+    position: absolute;;
+    top:-590px;
+    left:-255px;
+    display:flex;
+    z-index: 1;
+}
+.circulo-inferior svg{
+    position: absolute;
+    top:360px;
+    right: 0px;
+    display:flex;
+    z-index: 1;
 }
