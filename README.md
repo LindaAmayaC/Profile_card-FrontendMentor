@@ -1,3 +1,4 @@
+URL de proyecto terminado https://lindaamayac.github.io/Profile_card-FrontendMentor/
 # Frontend Mentor - Profile card component
 
 ![Design preview for the Profile card component coding challenge](./design/desktop-preview.jpg)
